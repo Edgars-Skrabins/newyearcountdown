@@ -18,14 +18,18 @@ setInterval(countTimeDifference, refreshIntervalInMs)
 
 <template>
   <div>
-    <h1>{{timeDifference}}</h1>
+    <h1>{{ timeDifference }}</h1>
   </div>
 </template>
 
 <style scoped>
-  h1{
-    font-size: 25rem;
-    font-weight:bolder;
-    filter: drop-shadow(0 0 0.6rem rgba(0, 0, 0, 0.45));
-  }
+body {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 25rem;
+  font-weight: bolder;
+  filter: drop-shadow(0 0 0.6rem rgba(0, 0, 0, 0.45));
+}
 </style>
