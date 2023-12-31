@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-let timeDifference = ref<string>();
+const initialDate = new Date(Date.now());
+const initialTargetDate = new Date(2024, 0, 1);
+const initialTimeDifference = (initialTargetDate.getTime() / 1000 - initialDate.getTime() / 1000).toFixed(0).toString();
+let timeDifference = ref<string>(initialTimeDifference);
 const refreshIntervalInMs = 100;
 
 const countTimeDifference = () => {
@@ -18,7 +21,7 @@ setInterval(countTimeDifference, refreshIntervalInMs)
 
 <template>
   <div>
-    <h1>{{ timeDifference }}</h1>
+    <h1>{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference }}</h1>
   </div>
 </template>
 
