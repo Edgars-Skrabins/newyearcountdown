@@ -1,3 +1,10 @@
+<template>
+  <div>
+    <h1
+    >{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference }}</h1>
+  </div>
+</template>
+
 <script setup lang="ts">
 import {ref} from "vue";
 
@@ -19,13 +26,6 @@ const countTimeDifference = () => {
 setInterval(countTimeDifference, refreshIntervalInMs)
 
 </script>
-
-<template>
-  <div>
-    <h1
-    >{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference }}</h1>
-  </div>
-</template>
 
 <style scoped>
 div {
