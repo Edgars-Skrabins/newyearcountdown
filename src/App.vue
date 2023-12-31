@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1
-    >{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference }}</h1>
+    >{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference }}
+    </h1>
   </div>
 </template>
 
