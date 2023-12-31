@@ -22,7 +22,7 @@ setInterval(countTimeDifference, refreshIntervalInMs)
 
 <template>
   <div>
-    <h1>{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference }}</h1>
+    <h1>{{ Number(timeDifference) <= 0 ? 'Happy New Year!' : timeDifference}}</h1>
   </div>
 </template>
 
@@ -30,12 +30,16 @@ setInterval(countTimeDifference, refreshIntervalInMs)
 div{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   word-break: break-word;
+  flex-wrap: wrap;
 }
 
 h1 {
-  font-size: 17rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+
+  font-size: 10rem;
   font-weight: bolder;
   filter: drop-shadow(0 0 0.6rem rgba(0, 0, 0, 0.45));
 
@@ -62,13 +66,13 @@ h1 {
 
 @media screen and (max-width: 1050px) {
   h1 {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 </style>
