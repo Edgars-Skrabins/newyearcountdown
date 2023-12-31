@@ -32,4 +32,16 @@ h1 {
   font-weight: bolder;
   filter: drop-shadow(0 0 0.6rem rgba(0, 0, 0, 0.45));
 }
+
+@media screen and (max-width:1050px) {
+  h1 {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
 </style>
