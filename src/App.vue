@@ -27,8 +27,15 @@ setInterval(countTimeDifference, refreshIntervalInMs)
 </template>
 
 <style scoped>
+div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
 h1 {
-  font-size: 25rem;
+  font-size: 17rem;
   font-weight: bolder;
   filter: drop-shadow(0 0 0.6rem rgba(0, 0, 0, 0.45));
 
@@ -55,13 +62,13 @@ h1 {
 
 @media screen and (max-width: 1050px) {
   h1 {
-    font-size: 12rem;
+    font-size: 9rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 7rem;
+    font-size: 4rem;
   }
 }
 </style>
